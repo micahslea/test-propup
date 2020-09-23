@@ -1,0 +1,51 @@
+#local {
+    margin-top: 100px;
+}
+
+.weather-temp{
+    padding-bottom:40px;
+    padding-left:60px;
+}
+
+.weather-temp h1 , .weather-temp h4 , .weather-temp p{
+    padding-bottom: 10px;
+}
+
+.weather-info p , .weather-info h2{
+    text-align:center;
+}
+
+.user-weather{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: black;
+    border-radius: 25px;
+    border:3px solid #36A2D6;
+    background-image: url("./images/sky2.jpg");
+}
+
+.region{
+    margin-top:10px;
+}
+
+.regioninput{
+    background:none;
+    border:none;
+    border-bottom:1px solid rgb(68, 197, 214);
+    outline:none;
+}
+
+.regioninput::placeholder{
+    font-family:Nunito;
+    font-weight:600;
+    font-size:1rem;
+    padding-left:0;
+}
+
+#weathericon {
+    background-color: white;
+    height: 83px;
+    padding-top: 10px;
+}

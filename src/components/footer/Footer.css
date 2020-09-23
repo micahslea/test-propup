@@ -1,0 +1,29 @@
+.footer {
+    position: flex;
+    width: 100%;
+    background: #B2D350; 
+    padding: 0px 0px 0px 0px;   
+}
+
+.upper-footer {
+    background: white;
+    border: 3px solid #F5F5F5;
+    padding: 10px;
+}
+
+.content p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #067c9c;
+}
+
+.column1 {
+    margin: auto;
+    width: 30%;
+}
+
+
+

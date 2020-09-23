@@ -1,0 +1,64 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #19b4de;
+}
+
+#nav-toggle-state {
+  display: none;
+}
+
+#nav-toggle-state:checked ~ .navbar-menu {
+  display: block;
+}
+
+.toolbar_navigation {
+  display: flex;
+}
+
+.button {
+  color: white;
+  background-color: #b2d350;
+}
+
+.ProfilePicture {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../img/nopic.jpg);
+  left: 10px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 50%;
+  background-size: 32px 32px;
+}
+
+#ProfilePicture {
+  width: 200px !important;
+  height: 200px !important;
+  background-image: url(../../img/nopic.jpg);
+  left: 10px;
+  position: relative;
+  cursor: pointer;
+  border-radius: 50%;
+  background-size: 32px 32px;
+}
+
+.navbar-item img {
+  max-height: 12.75rem !important;
+}
+
+.centerStuff {
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
+}
+
+.centerPic {
+  margin-left: 90px;
+}
+
+.centerButt {
+  margin-left: 131px;
+}

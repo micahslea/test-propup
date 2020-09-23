@@ -1,0 +1,26 @@
+
+.custom-style {
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 10px;
+    height: 70px;
+    width: 310px;
+    z-index: 2;
+}
+
+.custom-style-list {
+    padding: 0px;
+    z-index: 1;
+}
+
+.style-unordered-list {
+    font-family: 'Patua One', cursive;
+}
+
+.style-unordered-list li:hover {
+    background-color: #19B4DE;
+}
+
+.current-loc-ico {
+    display: none;
+  }

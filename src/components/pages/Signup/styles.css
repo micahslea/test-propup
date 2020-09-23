@@ -1,0 +1,33 @@
+.notification.signup {
+    background: rgb(228, 225, 225);
+    border-radius: 35px;
+    margin-left: 580px;
+    width: 650px; 
+    position: absolute;
+    top: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+    .notification.signup {
+      margin-left: 0px;
+      width:340px;
+    }
+  }
+
+.field2 {
+    width: 550px;
+}
+
+@media only screen and (max-width: 600px) {
+    .field2 {
+      margin-left: 0px;
+      width:300px;
+    }
+  }
+
+  #avatar {
+    background-color:#B2D350;
+    color: white;
+    border-radius: 35px; 
+    width: 140px;  
+  }

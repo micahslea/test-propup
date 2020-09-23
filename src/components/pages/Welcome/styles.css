@@ -1,0 +1,59 @@
+.wrapper {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.prev {
+    margin-right: 200px;
+    color:black;
+    font-weight: bolder;
+}
+
+.next {
+    margin-left: 20px;
+    color: black; 
+    font-weight: bolder;   
+}
+
+.carousel-item {
+    width: 700px;
+    height: 400px;
+}
+
+.carousel.slide  {
+    width: 700px;
+    margin-left: 150px;;
+}
+
+.carousel-control-prev-icon {
+    color:black;
+}
+
+.message-header {
+    background-color: #B2D350;
+    color: black;
+}
+
+.message-body img {
+    margin-left: 45px;
+}
+
+.start {
+    font-size: 24px;
+}
+
+.button.get-started {
+    margin-left: 870px;
+    padding: 10px;
+    background-color: #B2D350;
+    color:white;
+    border-radius: 25px;    
+}
+
+.button.get-started:hover {
+    color: red;
+}
+
+#key {
+    height: 400px;
+}

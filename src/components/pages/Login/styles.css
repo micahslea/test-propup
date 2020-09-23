@@ -1,0 +1,26 @@
+.login-container {
+    margin-top: 80px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.form {
+    width: 450px;
+    margin-left: 20px;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+.level-center {
+    margin-left: 33%;
+    border-radius: 25px;
+} 
+
+.login-container h1 {
+    font-family: 'Patua One', cursive;
+    font-size: 24px;
+}
+
+.icon {
+    margin-left: 20px;
+}

@@ -1,0 +1,53 @@
+.propresult {
+    Margin-top: 100px;
+
+   
+}
+.propSingleCard{
+    height: 800px !important
+}
+.propCard{
+    display: inline-block;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+.propPic{
+    max-height: 350px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#bid {
+    background-color: #B2D350;
+    color: white;
+    margin-top: 15px;
+    margin-left: 115px;
+    border-radius: 30px;
+}
+
+.card-image {
+    margin-left: 15px;
+    
+}
+
+.card {
+    width: 400px;
+    
+
+}
+
+.pagination-previous {
+    margin-left: 500px;
+    color: white;
+    background-color: #B2D350;
+}
+
+.pagination-next {
+    margin-right: 500px;
+    color: white;
+    background-color: #B2D350;
+}
