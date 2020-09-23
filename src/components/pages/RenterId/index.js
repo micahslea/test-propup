@@ -14,7 +14,7 @@ class RenterDash extends Component {
       propArray: [],
     };
   }
-  
+
   getAll() {
     let docName = localStorage.getItem(LoginString.ID);
     console.log("docName = ", docName);
@@ -24,32 +24,31 @@ class RenterDash extends Component {
       .then((snap) => {
         snap.forEach((doc) => {
           db.collection("user")
-          .where("id", "==", doc.data().ownerID)
-          .get()
-          .then((snap) => {
-            snap.forEach((doc2) => {
-          this.setState((prevState) => ({
-            propArray: [
-              ...prevState.propArray,
-              {
-                name: doc.data().name,
-                address: doc.data().address,
-                description: doc.data().description,
-                minBid: doc.data().minBid,
-                province: doc.data().province,
-                pic: doc.data().pic,
-                zipC: doc.data().zipC,
-                owner: doc2.data().name,
-                ownerPic: doc2.data().URL,
-                docID: doc.id,
-              },
-            ],
-          }));
+            .where("id", "==", doc.data().ownerID)
+            .get()
+            .then((snap) => {
+              snap.forEach((doc2) => {
+                this.setState((prevState) => ({
+                  propArray: [
+                    ...prevState.propArray,
+                    {
+                      name: doc.data().name,
+                      address: doc.data().address,
+                      description: doc.data().description,
+                      minBid: doc.data().minBid,
+                      province: doc.data().province,
+                      pic: doc.data().pic,
+                      zipC: doc.data().zipC,
+                      owner: doc2.data().name,
+                      ownerPic: doc2.data().URL,
+                      docID: doc.id,
+                    },
+                  ],
+                }));
+              });
+            });
         });
       });
-    });
-  })
-   
   }
   componentDidMount() {
     this.getAll();
@@ -62,15 +61,25 @@ class RenterDash extends Component {
         <div className="card animate__animated animate__fadeInUp">
           <div className="card-image">
             <figure className="image is-2by2">
-              <img src={p.pic[0]} alt="House1" alt="Placeholder image" className="propPic" />
+              <img
+                src={p.pic[0]}
+                alt="House1"
+                alt="Placeholder image"
+                className="propPic"
+              />
             </figure>
           </div>
           <div className="card-content">
             <div className="media">
               <div className="media-left">
-                <figure className="image is-48x48">
-                <img
-                    src={p.ownerPic.length ? p.ownerPic : "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQE9tG_NFfmLde3aA3q3p2yib1KJslRRNlJQg&usqp=CAU"}
+                <figure>
+                  <img
+                    className="image is-48x48"
+                    src={
+                      p.ownerPic.length
+                        ? p.ownerPic
+                        : "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQE9tG_NFfmLde3aA3q3p2yib1KJslRRNlJQg&usqp=CAU"
+                    }
                     alt="Placeholder image"
                   />
                 </figure>
@@ -83,12 +92,16 @@ class RenterDash extends Component {
               </div>
             </div>
             <div className="content">
-            <h6>Current Bid: </h6>
+              <h6>Current Bid: </h6>
               <p>${p.minBid}</p>
               <h6>Description:</h6>
-              <p>{p.description.length > 144 ? p.description.substring(0, 75) + "..." : p.description}</p>
+              <p>
+                {p.description.length > 144
+                  ? p.description.substring(0, 75) + "..."
+                  : p.description}
+              </p>
               <br></br>
-              <a href="/renter" className="button" id="bid">
+              <a href={`/property/${p.docID}`} className="button" id="bid">
                 Make a Bid
               </a>
             </div>

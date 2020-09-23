@@ -65,9 +65,10 @@ class OwnerDash extends Component {
           <div className="card-content">
             <div className="media">
               <div className="media-left">
-                <figure className="image is-48x48">
-                <img
-                    src={p.ownerPic }
+                <figure>
+                  <img
+                    className="image is-48x48"
+                    src={p.ownerPic}
                     alt="Placeholder image"
                   />
                 </figure>
@@ -77,10 +78,14 @@ class OwnerDash extends Component {
               </div>
             </div>
             <div className="content">
-            <h6>Current Bid: </h6>
+              <h6>Current Bid: </h6>
               <p>${p.minBid}</p>
               <h6>Description:</h6>
-              <p>{p.description.length > 144 ? p.description.substring(0, 75) + "..." : p.description}</p>
+              <p>
+                {p.description.length > 144
+                  ? p.description.substring(0, 75) + "..."
+                  : p.description}
+              </p>
               <br></br>
               <a href={`/edit/${p.docID}`} className="button" id="bid">
                 Edit Prop
